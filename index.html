@@ -1,1 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>artin</title>
+    <link rel="icon" href="https://artin-fathzadeh.github.io/cdn/main/favicon.png" type="image/png">
 
+    <style>
+        body {
+            font-family: 'IBM Plex Mono', monospace;
+            margin: 0;
+            padding: 0;
+            background-color: #a294ff;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        .top-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 65px;
+            background-color: #a294ff;
+            z-index: 1; 
+        }
+
+        .content {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 2em;
+            border-radius: 5px;
+            color: #efefef;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 70px;
+        }
+
+        h1, h2 {
+            font-size: 2.5em;
+            margin-bottom: 1em;
+        }
+
+        p {
+            font-size: 1.2em;
+            line-height: 1.5;
+            margin-bottom: 2em;
+        }
+
+        .contact-button {
+            background-color: #94bdff;
+            padding: 1em 2em;
+            border: none;
+            border-radius: 5px;
+            color: #fff;
+            font-size: 1.2em;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            text-decoration: none; 
+        }
+        .github-button {
+            background-color: #94bdff;
+            padding: 1em 2em;
+            border: none;
+            border-radius: 5px;
+            color: #fff;
+            font-size: 1.2em;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            bottom: 20px;
+            right: 20px;
+            text-decoration: none; 
+        }
+        .contact-button:hover {
+            background-color: #7391d8;
+        }
+
+        .github-button:hover {
+            background-color: #7391d8;
+        }
+
+        .hamburger-menu {
+            display: block; 
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 10; 
+            cursor: pointer;
+        }
+
+        .hamburger-menu .bar {
+            display: block;
+            width: 25px;
+            height: 3px;
+            background-color: #fff;
+            margin: 5px 0;
+            transition: transform 0.3s ease;
+        }
+
+        .hamburger-menu.open .bar:nth-child(1) {
+            transform: rotate(45deg) translate(5px, 5px);
+        }
+
+        .hamburger-menu.open .bar:nth-child(2) {
+            opacity: 0;
+        }
+
+        .hamburger-menu.open .bar:nth-child(3) {
+            transform: rotate(-45deg) translate(7px, -7px);
+        }
+
+        .nav-links {
+            position: fixed;
+            top: 0;
+            left: 0; 
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 2em;
+            transform: translateX(-100%);
+            transition: transform 0.3s ease;
+        }
+
+        .nav-links a {
+            color: #fff;
+            padding: 1em 2em;
+            margin-bottom: 1em;
+            text-decoration: none;
+        }
+
+        .nav-links.open {
+            transform: translateX(0); 
+        }
+
+        .icon {
+            position: fixed;
+            top: 2px;
+            left: 20px;
+            transition: transform 0.7s ease;
+            z-index: 1000;
+        }
+
+        .icon:hover {
+            transform: scale(1.2);
+        }
+
+        .icon video {
+            width: 75px;
+            height: 75px;
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="top-bg"></div>
+    <div class="hamburger-menu">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+
+    <nav class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#ewwwwwww">ewwwwwww</a>
+        <a href="#projects">My work!</a>
+        <a href="#contact">Contact me</a>
+    </nav>
+
+    <section class="content" id="home">
+        <h1>Hello!</h1>
+        <p>I'm artin!</p>
+        <p>Scroll or use the hamburger menu to read more on my bland and poorly made website</p>
+    </section>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    <section class="content" id="ewwwwwww">
+        <h2>Why is this website so horrible?</h2>
+        <p>This is my first poorly executed attempt at creating a frontend application since I usually work with backends.</p>
+    </section>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    <section class="content" id="projects">
+        <h2>My work!</h2>
+        <p>plz visit my GitHub page 🥺🥺🙏🙏🙏 (any project created by me and not forked from another repo may be used however you wish since it's not very important).</p>
+        <a href="https://github.com/artin-fathzadeh" class="github-button">be enlightened :0</a>
+    </section>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    <section class="content" id="contact">
+        <h2>Contact me</h2>
+        <p>Feel free to contact me by pressing the button in the bottom right corner. I'm still working on setting up my own form client, so for now you can email me at my school email.</p>
+    </section>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    <a href="mailto:af40111@pausd.us" class="contact-button">Contact Me</a>
+
+    <script>
+        const hamburgerMenu = document.querySelector('.hamburger-menu');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburgerMenu.addEventListener('click', () => {
+            hamburgerMenu.classList.toggle('open');
+            navLinks.classList.toggle('open');
+        });
+
+
+        const navLinksArray = document.querySelectorAll('.nav-links a');
+        navLinksArray.forEach(link => {
+            link.addEventListener('click', (event) => {
+                event.preventDefault(); 
+                const targetId = link.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+
+                targetElement.scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+
+        const icon = document.querySelector('.icon');
+
+        document.addEventListener('mousemove', (e) => {
+            const rect = icon.getBoundingClientRect();
+            const dx = e.clientX - (rect.left + rect.width / 2);
+            const dy = e.clientY - (rect.top + rect.height / 2);
+            const distance = Math.sqrt(dx * dx + dy * dy);
+
+            if (distance < 150) {
+                const angle = Math.atan2(dy, dx);
+                const moveX = Math.cos(angle) * 5;
+                const moveY = Math.sin(angle) * 5;
+                icon.style.transform = `translate(${moveX}px, ${moveY}px) scale(1.1)`;
+            } else {
+                icon.style.transform = 'scale(1)';
+            }
+        });
+    </script>
+    <a href="https://artin-fathzadeh.github.io/uwu.html" class="icon" title="woobsite">
+        <video src="https://artin-fathzadeh.github.io/cdn/main/logo.mp4" autoplay loop muted></video>
+    </a>
+</body>
+</html>
