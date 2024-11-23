@@ -146,9 +146,3 @@ p {
 .icon:hover {
     transform: scale(1.2);
 }
-
-.icon img {
-    width: 300px;
-    height: 300px;
-    pointer-events: none;
-}
