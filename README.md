@@ -1,2 +1,2 @@
 # counterspell
-no
+Code is in web src folder
